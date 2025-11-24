@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY ELITE - متجر فاخر</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background: #111;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #D4AF37;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #D4AF37;
+        }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #D4AF37;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #ccc;
+        }
+        
+        .btn {
+            background: #D4AF37;
+            color: #000;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .products {
+            padding: 5rem 0;
+            background: #111;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #D4AF37;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-image {
+            height: 250px;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .product-name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-price {
+            color: #D4AF37;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .main-content {
+            margin-top: 80px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">LUXURY ELITE</div>
+                <div class="nav-links">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#products">المنتجات</a>
+                    <a href="#contact">اتصل بنا</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>LUXURY ELITE</h1>
+                    <p>اكتشف عالم الفخامة والأناقة مع تشكيلتنا الحصرية</p>
+                    <a href="#products" class="btn">تصفح المنتجات</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2 class="section-title">منتجاتنا الفاخرة</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">⌚</div>
+                        <div class="product-info">
+                            <h3 class="product-name">ساعة رولكس ديتجاست</h3>
+                            <div class="product-price">15,000 ج.م</div>
+                            <button class="btn">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">💎</div>
+                        <div class="product-info">
+                            <h3 class="product-name">عطر شانيل رقم 5</h3>
+                            <div class="product-price">2,500 ج.م</div>
+                            <button class="btn">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">📿</div>
+                        <div class="product-info">
+                            <h3 class="product-name">سلسلة ذهبية</h3>
+                            <div class="product-price">8,000 ج.م</div>
+                            <button class="btn">إضافة إلى السلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // كود JavaScript مبسط
+        console.log("LUXURY ELITE - تم تحميل الموقع بنجاح");
+        
+        // إضافة تفاعل للأزرار
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                if(this.textContent === 'إضافة إلى السلة') {
+                    alert('تم إضافة المنتج إلى السلة بنجاح!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
